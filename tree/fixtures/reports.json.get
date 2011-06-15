@@ -1,0 +1,13 @@
+[
+	{"name": "Report 01", "description": "To the curb!", "categoryIds": [5], "id": 5},
+  {"name": "Report 02", "description": "Was a big one", "categoryIds": [5], "id": 6},
+  {"name": "Report 03", "description": "Was a big one", "categoryIds": [5], "id": 7},
+  {"name": "Report 04", "description": "Was a big one", "categoryIds": [5,6], "id": 8},
+  {"name": "Report 05", "description": "Was a big one", "categoryIds": [5,6], "id": 9},
+  {"name": "Report 06", "description": "Was a big one", "categoryIds": [6,7], "id": 10},
+  {"name": "Report 07", "description": "Was a big one", "categoryIds": [6,8], "id": 11},
+  {"name": "Report 08", "description": "Was a big one", "categoryIds": [7.8], "id": 12},
+  {"name": "Report 09", "description": "Was a big one", "categoryIds": [8,9], "id": 13},
+  {"name": "Report 10", "description": "Was a big one", "categoryIds": [9,10], "id": 14},
+  {"name": "Report 11", "description": "Was a big one", "categoryIds": [11,12,13], "id": 15}
+]

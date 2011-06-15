@@ -1,0 +1,5 @@
+<%for(var i = 0; i < reports.length ; i++){%>
+	<li <%= reports[i]%>>
+		<%= $.View('//tree/views/report/show',reports[i])%>
+	</li>
+<%}%>

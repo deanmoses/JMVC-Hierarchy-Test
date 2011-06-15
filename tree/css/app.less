@@ -1,0 +1,20 @@
+// LESS variable declarations
+@fontcolor_midgray: #333;
+@bgcolor_midgray: #ccc;
+
+// LESS mixin declarations
+.rounded-corners (@radius: 5px) {
+  border-radius: @radius;
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+}
+
+body {
+  color:  @fontcolor_midgray;
+}
+
+h1 {
+  background-color: @bgcolor_midgray;
+  padding: 5px 15px;
+  .rounded-corners(15px);
+}
