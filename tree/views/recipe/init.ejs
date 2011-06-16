@@ -1,0 +1,14 @@
+<ul>
+		<%= $.View('//tree/views/recipe/list',{recipes: recipes})%>
+</ul>
+<h2>New Category</h2>
+<form>
+	<% for(var attr in tree.Models.Recipe.attributes){ %>
+		<% if(attr == 'id') continue;%>
+		<div>
+			<label><%= attr %> </label><br />
+			<input type="text" value="" name="<%= attr %>"/>
+		</div>
+	<%}%>
+	<input type='submit' value='Create'/>
+</form>

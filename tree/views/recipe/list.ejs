@@ -1,0 +1,10 @@
+<%for(var i = 0; i < recipes.length ; i++){%>
+	<li <%= recipes[i]%>>
+		<%= $.View('//tree/views/recipe/show',recipes[i])%>
+    <% if (recipes[i].children) { %>
+      <ul>
+        <%= $.View('//tree/views/recipe/list', {recipes: recipes[i].children})%>
+      </ul>
+    <% } %>
+	</li>
+<%}%>
