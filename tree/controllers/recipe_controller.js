@@ -51,9 +51,18 @@ $.Controller.extend('tree.Controllers.Recipe',
  * Handles the click to show the category's reports.
  * @param {jQuery} el The recipe's 'reports' link element.
  */
-'.reports click': function( el ){
-   //var recipe = el.closest('.recipe').model();
-   //location.hash = "category/" + recipe.id;
+'.recipe click': function( el ){
+
+	console.log("in .reports click");
+	debugger;
+	// TODO: figure out how to get the right element.  The line below isn't it.
+	var recipe = el.closest('.recipe').model();
+	 console.log("Setting hash to: ", recipe);
+	var recipeHashUrl = "category/" + recipe.id;
+	 console.log("REALLY setting hash to: " + recipeHashUrl);
+	this.redirectTo(recipeHashUrl);
+
+   //location.hash = recipeHashUrl;
    //this.publish("category_select", {category:recipe.id});
 },
 'category_select subscribe' : function(params) {
